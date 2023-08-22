@@ -22,6 +22,15 @@ for (let folder in ranges) {
     }
 }
 
+function getCurrentCategory(id) {
+    for (let folder in ranges) {
+        if (id >= ranges[folder][0] && id <= ranges[folder][1]) {
+            return folder;
+        }
+    }
+    return null;
+}
+
 function ImageDetail() {
   const router = useRouter();
   const { id } = router.query;
@@ -30,7 +39,7 @@ function ImageDetail() {
   // 前後のIDを計算
   const prevId = currentId > 1 ? currentId - 1 : null;
   const nextId = currentId < 138 ? currentId + 1 : null;
-
+  const currentCategory = getCurrentCategory(currentId);
   // IDに基づいて画像を検索
   const image = images.find(img => img.id === id);
 
@@ -41,7 +50,7 @@ function ImageDetail() {
   return (
     <div className="container mx-auto max-w-lg md:max-w-4xl lg:max-w-6xl m-10 p-10 h-full">
             {/* Back button */}
-            <Link href="/portrait" className="mb-8 inline-block px-4 py-2 text-gray-700 bg-gray-200 rounded-md hover:bg-gray-300 transition-colors duration-300">
+            <Link href={`/${currentCategory}`} className="mb-8 inline-block px-4 py-2 text-gray-700 bg-gray-200 rounded-md hover:bg-gray-200 transition-colors duration-300">
                 ← Home
             </Link>
 
