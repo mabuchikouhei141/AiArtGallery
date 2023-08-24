@@ -1,13 +1,3 @@
-.overlay{
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: -900;
-  background-color: black;
-  opacity: 50%;
-}
 
 .loaderContainer {
   position: fixed;
@@ -16,10 +6,13 @@
   width: 100%;
   height: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(80px, 150px)); 
-  grid-gap: 0px; 
+  grid-template-columns: repeat(auto-fill, minmax(90px, 150px));
+  grid-gap: 0px;
+  justify-content: center;  /* 水平方向の中央揃え */
+  align-items: center;      /* 垂直方向の中央揃え */
   z-index: -1000;
 }
+
 
 .loaderItem {
   width: 100%;
@@ -27,4 +20,15 @@
   background-size: cover;
   background-position: center;
   transform-origin: center;  
+}
+
+.overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -900;
+  background-color: black;
+  opacity: 50%;
 }
