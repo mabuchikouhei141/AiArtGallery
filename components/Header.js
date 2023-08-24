@@ -45,8 +45,8 @@ export default function Header() {
     <div className="container mx-auto max-w-4xl mt-10 md:max-w-6xl md:mt-16 lg:max-w-7xl lg:mt-24 xl:max-w-9xl">
     <div className='flex flex-cols-2 flex-nowrap justify-between items-center mx-8 lg:flex-col mb-4'>
       {/* ハンバーガーメニューボタン */}
-    <h1 className="text-center text-2xl font-bold md:text-4xl lg:text-6xl xl:text-8xl"><span className='text-green-300'>AI</span> ART GALLERY</h1>
-    <button className="lg:hidden p-4 left-0 top-0 bg-gray-100 rounded-md" onClick={() => setIsOpen(!isOpen)}>
+    <h1 className="text-center text-xl font-bold md:text-2xl lg:text-4xl xl:text-6xl"><span className='text-green-300'>AI</span> ART GALLERY</h1>
+    <button className="lg:hidden p-2 left-0 top-0 bg-gray-100 rounded-md" onClick={() => setIsOpen(!isOpen)}>
           <span className="block w-4 h-0.5 bg-green-600 mb-1"></span>
           <span className="block w-4 h-0.5 bg-green-600 mb-1"></span>
           <span className="block w-4 h-0.5 bg-green-600"></span>
