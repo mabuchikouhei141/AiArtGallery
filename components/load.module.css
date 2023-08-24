@@ -1,0 +1,30 @@
+.overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -900;
+  background-color: black;
+  opacity: 50%;
+}
+
+.loaderContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(80px, 150px)); 
+  grid-gap: 0px; 
+  z-index: -1000;
+}
+
+.loaderItem {
+  width: 100%;
+  padding-top: 100%; /* アスペクト比を1:1に保つ */
+  background-size: cover;
+  background-position: center;
+  transform-origin: center;  
+}
