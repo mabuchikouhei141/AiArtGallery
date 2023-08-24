@@ -42,7 +42,7 @@ export default function Header() {
             {/* ... 他のリンクを同様に */}
           </ul>
         </div>
-    <div className="container mx-auto max-w-4xl mt-10 md:max-w-6xl md:mt-16 lg:max-w-7xl lg:mt-24 xl:max-w-9xl">
+    <div className="container mx-auto max-w-4xl mt-10 md:max-w-6xl md:mt-14 lg:max-w-7xl lg:mt-16 xl:max-w-9xl">
     <div className='flex flex-cols-2 flex-nowrap justify-between items-center mx-8 lg:flex-col mb-4'>
       {/* ハンバーガーメニューボタン */}
     <h1 className="text-center text-2xl font-bold md:text-4xl lg:text-6xl xl:text-8xl"><span className='text-green-300'>AI</span> ART GALLERY</h1>
